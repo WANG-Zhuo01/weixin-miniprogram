@@ -1,0 +1,179 @@
+/* pages/shop/shop.wxss */
+.rollingImage{
+    margin-top: 10px;
+    width:93%;
+    align-items: center;
+}
+.rollImage{
+    width: 100%;
+    height: 110%;
+}
+.recommendContainer{
+    width:94%;
+    /* background-color: rgb(247, 112, 112); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recommend{
+    width: 48%;
+    height:200px;
+    background-color: #fff9fb;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(107, 89, 89, 0.561);
+
+    padding: 0px;
+    /* overflow: hidden; */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.recommend .reviewContainer{
+    width: 100%;
+    height:60px;
+    background-color: rgb(255, 240, 243);
+    /* margin-top: 140px; */
+    border-radius:0px 0px 5px 5px;
+    padding: 0px;
+    display: flex; 
+    flex-direction: row;
+    /* overflow: hidden; */
+    justify-content: space-between;
+    font-size: small;
+}
+.recommend .pasteImage{
+    margin-top: 5px;
+    margin-left: 24px;
+    margin-right: 24px;
+    width: 80%;
+    height:140px;
+    border-radius: 10px;
+}
+.layoutTxt{
+    width:35%;
+    height:140px;
+    align-items: center;
+}
+.publishBoard{
+    padding-top:10px;
+    padding-bottom: 10px;
+    width:99%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(107, 89, 89, 0.561);
+    background-color: white;
+    color: rgb(173, 173, 173);
+    text-align:left;
+    margin-top: 10px;
+}
+.searchBar{
+    width: 90%;
+    display: flex;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color:rgba(224, 220, 220, 0.561);
+    border-radius: 20px;
+}
+.review{
+    /* background-color: rgb(247, 112, 112); */
+    width:24%;
+    height:100%;
+    columns: #000;
+    /* background: rgb(224, 200, 200); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size: 22rpx; */
+}
+.review text{
+    color:#ff6476;
+}
+.myGoodsContainer{/* 我的定制 */
+    width: 93%;height:320px;
+    /* background-color: rosybrown;  */
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.tabBarLeft{/*tabBarLeft左边彩妆tabbar*/
+    width:30%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 100, 118);
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.tabBarRight{/*右边护肤tabbar*/
+    width:70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 100, 118);
+    box-sizing: border-box;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.goodsList{
+    width:100%;
+    height:280;/*320-40*/
+     /* background-color: royalblue;商品列表 */
+    display: flex;
+}
+.leftCatalogueContainer{
+    width:30%;
+    height:100%;
+    /* background-color: skyblue; 左侧分类目录*/
+    /* overflow: scroll; */
+}
+.rightGoodsContainer{
+    width:70%;
+    height:100%;
+    /* background-color: tomato; 右侧商品列表*/
+    /* overflow: scroll; */
+}
+.catalogueContainer{/*catalogueContainer左侧目录的scrollview*/
+    height:280px;
+    width:100%;
+}
+.catalogue{
+
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(128, 128, 128);
+    border: 1rpx solid rgb(155, 155, 155);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: smaller;
+    background-color: rgb(247, 247, 247);
+}
+.goodsNameContainer{
+    height:280px;
+    /* background-color: tomato; */
+}
+.goodsName{
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;/*右侧商品名列表*/
+    color: rgb(128, 128, 128);
+    /* border: 2rpx solid rgb(128, 128, 128);
+    border-left: none;
+    border-right: none;
+    border-top: none; */
+    font-size: smaller;
+    /* background-color: thistle; */
+}

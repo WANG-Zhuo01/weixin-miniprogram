@@ -1,0 +1,21 @@
+<!--pages/index/releaseArticle/releaseArticle.wxml-->
+<view class='articleContainer'>
+    <form catchsubmit="formSubmit" catchreset="formReset">
+        <view class="page-section">
+            <textarea class="weui-input" name="input" placeholder="分享些什么..." ></textarea>
+        </view>
+        <view class="page-section-title" style="display:flex; align-items: center;">
+        选择图片
+        </view>
+        <view style="width:100%; display: flex;  flex-wrap: wrap;"><!--wrap自动换行-->
+            <view wx:for="{{layPicture}}"  wx:for-index="i" hidden="{{!item.imgUrl}}" wx:for-key="randow" name='pictureBox{{i}}' style="width:100px;height:100px;background-color: #ddd; font-size: 60px; color:white; text-align: center; margin-right: 15rpx;" bindtap="addPicture">
+                <image name='layPicture{{i}}' src="{{item.imgUrl}}" hidden="{{!item.imgUrl}}" mode="aspectFill" style="width:100%; height:100%"></image><!--展示的图片-->
+            </view>
+            <view name='pictureSelector' style="width:100px;height:100px;background-color: #ddd; font-size: 60px; color:white; text-align: center;" bindtap="addPicture">+</view>
+        </view>
+        <view >
+        <button style="width:100px; margin: 30rpx 0; color:white; background-color: pink;" formType="submit" >发表</button>
+        <button style="width:100px; margin: 30rpx 0; color:white; background-color: pink;" formType="reset" >重置</button>
+        </view>
+    </form> 
+</view>

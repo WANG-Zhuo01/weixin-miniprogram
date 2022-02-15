@@ -1,0 +1,59 @@
+// 推荐列表数据
+var testData={"recommendList":[
+    {
+        "layoutImage":"https://shoot.photo/images/2022/02/10/q2AZn.png",
+        "artitleUrl":"/pages/index/articlePage/article",
+        "layoutHead":"敏感肌怎么修复受损的皮肤屏障？",
+        "layoutTxt":"10个小技巧有效帮你修复受损屏障。",
+        "userImage":"📙",
+        "nickName":"美妆达人说",
+        "bottomRightContent":[
+          {"img":"🤍","value":9298,"bottomTabEvent":"giveLike","isSelected":false},
+          {"img":"💬","value":968,"bottomTabEvent":"comment"},
+          {"img":"🔃","value":109,"bottomTabEvent":"share"}
+        ]
+    },
+    {
+      "layoutImage":"https://shoot.photo/images/2022/02/09/q2zt8.png",
+      "artitleUrl":"/pages/index/articlePage/article",
+      "layoutHead":"【美妆盛世】听说节日折扣超大？！",
+      "layoutTxt":"加购分享赢豪礼！100元无门槛红包等你拿！",
+      "userImage":"🦸‍♀️",
+      "nickName":"樱桃小丸犊子",
+      "bottomRightContent":[
+        {"img":"🤍","value":928,"bottomTabEvent":"giveLike","isSelected":false},
+        {"img":"💬","value":488,"bottomTabEvent":"comment"},
+        {"img":"🔃","value":90,"bottomTabEvent":"share"}
+      ]
+    },
+    {
+      "layoutImage":"https://shoot.photo/images/2022/02/09/q2X1a.png",
+      "artitleUrl":"/pages/index/articlePage/article",
+      "layoutHead":"粉底液真的要越白越好吗？",
+      "layoutTxt":"快来看看你适合什么样的粉底液吧。",
+      "userImage":"👩‍🚀",
+      "nickName":"小王今天变美了吗",
+      "bottomRightContent":[
+        {"img":"🤍","value":529,"bottomTabEvent":"giveLike","isSelected":false},
+        {"img":"💬","value":188,"bottomTabEvent":"comment"},
+        {"img":"🔃","value":29,"bottomTabEvent":"share"}
+      ]
+    },
+    {
+      "layoutImage":"https://shoot.photo/images/2022/02/09/q2Ig6.png",
+      "artitleUrl":"/pages/index/articlePage/article",
+      "layoutHead":"您有一份双十一清单已送达~",
+      "layoutTxt":"打响2021年打工人的翻身仗！",
+      "userImage":"🐶",
+      "nickName":"不瘦10斤不换头像",
+      "bottomRightContent":[
+        {"img":"🤍","value":628,"bottomTabEvent":"giveLike","isSelected":false},
+        {"img":"💬","value":255,"bottomTabEvent":"comment"},
+        {"img":"🔃","value":36,"bottomTabEvent":"share"}
+      ]
+    }
+  ]
+}
+module.exports={
+    postData:testData
+}

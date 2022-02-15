@@ -1,0 +1,30 @@
+/* pages/camera/scanningPage/scanningPage.wxss */
+.logo{
+    width:300px;
+    height:230px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rpx;
+}
+.logo image{
+    width:140rpx;
+    height:140rpx;
+}
+.processing{
+    width:300px;height:50px;margin-top: 10rpx;
+}
+.uploadPhoto{
+    width:300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+    position: relative;
+}
+.uploadPhoto image{
+    width:30%;
+    height:40%
+}

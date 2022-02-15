@@ -1,0 +1,56 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/shop/shop",
+        "pages/test/test",
+        "pages/camera/camera",
+        "pages/skinResults/skinResults",
+        "pages/index/personalPanel/personalPanel",
+        "pages/index/articlePage/article",
+        "pages/camera/scanningPage/scanningPage",
+        "pages/index/releaseArticle/releaseArticle"
+        
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Magic Mirror",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false,
+        "backgroundColor": "#fee"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#ff6476",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/首页/u426.png",
+                "selectedIconPath": "images/首页/u426_selected.png"
+            },
+            {
+                "pagePath": "pages/camera/camera",
+                "text": "扫一扫",
+                "iconPath": "images/首页/u424.png",
+                "selectedIconPath": "images/首页/u424_selected.png"
+            },
+            {
+                "pagePath": "pages/shop/shop",
+                "text": "购物",
+                "iconPath": "images/首页/u430.png",
+                "selectedIconPath": "images/首页/u430_selected.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 2000,
+        "connectSocket": 2000,
+        "uploadFile": 2000,
+        "downloadFile": 2000
+    }
+}

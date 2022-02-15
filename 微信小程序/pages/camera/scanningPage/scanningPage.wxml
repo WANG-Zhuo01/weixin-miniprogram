@@ -1,0 +1,23 @@
+<!--pages/camera/scanningPage/scanningPage.wxml-->
+<text></text>
+<view class="container">
+    <view class='logo'>
+        <image src="https://shoot.photo/images/2022/02/03/q3bF7.png" ></image>
+    </view>
+    <view class='processing'>
+        <!-- <progress percent="80" color="#10AEFF" active stroke-width="5" /> -->
+        <progress percent="{{processValue}}" color="rgb(255, 100, 118)" active stroke-width="5" bindactiveend='onScanningFinish' />
+    </view>
+    <text style="color: #ccc;">正在扫描生成结果...</text>
+    <view class='uploadPhoto'> 
+        <image src="{{facePhoto}}" mode="aspectFill"></image>
+        <canvas type="2d" id="canvas" style="width: {{canvasWidth}}px; height: {{canvasWidth}}px; position: absolute; border-width: 3px; border-style:dashed; border-color: pink;"></canvas>
+        <!--  border-width: 2px; border-style:dashed; border-color: pink; -->
+    </view>
+    
+    <!-- <view class='processing'>
+        <progress percent="80" color="rgb(255, 100, 118)" active stroke-width="5" />
+    </view>    -->
+    
+
+</view>

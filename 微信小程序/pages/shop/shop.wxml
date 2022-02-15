@@ -1,0 +1,66 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+    <!-- <import src="/pages/template/template"/>
+    <template is="topBarTemplate"/> -->
+    <view style="width: 93%; font-weight: bolder;">
+        |我的定制<text style='color:rgb(255, 100, 118); font-size: smaller;'>(个人专属)</text>
+    </view>
+    <view class='myGoodsContainer'>
+        <view class="tabBarLeft">彩妆</view><view class='tabBarRight'>护肤</view>
+        <view class='goodsList'><!--横向填充-->
+            <view class='leftCatalogueContainer'><!--竖向填充--><!--左边分类目录区域-->
+                <scroll-view class='catalogueContainer' scroll-y="true">
+                    <view class='catalogue' wx:for="{{customGoods.caizhuang}}" wx:for-item="i" wx:key="xxx">
+                        {{i.name}}
+                    </view>
+                </scroll-view>
+
+            </view>
+            <view class='rightGoodsContainer'>
+                <scroll-view class='goodsNameContainer' scroll-y="true">
+                    <view style='width:100%;height:100%;align-items: center;' wx:for="{{customGoods.caizhuang}}" wx:for-item="i" wx:key="xx">
+                        <view class='goodsName' wx:for="{{i.sub}}">
+                            {{item}}
+                        </view>
+                    </view>
+                </scroll-view>
+                
+            </view><!--右边商品名称区域-->
+        </view>
+    </view>
+    <view style="width: 93%; font-weight: bolder;">
+        |平价替代<text style='color:rgb(255, 100, 118);font-size: smaller;'>(相同功效，更低价格)</text>
+    </view>
+    <view  class="searchBar" >
+        <icon type="search"></icon>
+        <input class="search-input" placeholder-style="color:#776260" placeholder="输入搜索内容" />
+    </view>
+
+    <view class="rollingImage">
+        <swiper autoplay interval='3000' indicator-dots >
+            <swiper-item wx:for="{{forRollImage}}" wx:key='randow' wx:for-index="i" ><!--点击进入预览图片-->
+                <!-- <image class="rollImage" src="{{item}}"></image> -->
+                <image class="rollImage" src="{{item.imgUrl}}" bindtap="previewImg" data-imgIndex='{{i}}'></image>
+            </swiper-item>
+        </swiper>
+    </view> 
+
+    <view class="recommendContainer">   
+        <!-- <navigator class="publishBoard" url="http://www.xsyu.edu.cn/index.htm">
+         🔈 推荐 --> 
+        <navigator url="/pages/index/articlePage/article" class="publishBoard">🔈 推荐 </navigator>
+        <view class="recommend" wx:for="{{articleList}}" wx:for-item="i" wx:for-index="j" wx:key='randow_i' bindtap="commingSoon"><!--点击事件，敬请期待-->
+            <image src='{{i.layoutPicture}}' class='pasteImage'></image>
+            <!-- <text class='layoutTxt'>{{i.layoutText}}</text> -->
+            <view class="reviewContainer" >
+                <view class="review" wx:for="{{i.reviewList}}" wx:key='randow_j' >
+                    <!-- <view style="height: 100%; width: 25%; display: flex; align-items: center;">{{item.reviewItem}}</view> -->
+                    <view catchtap="{{item.reviewTapEvent}}" data-id='{{j}}' data-is-slected='{{item.selectStatus}}' style="height: 100%; display: flex; align-items: center;">{{item.reviewItem}}</view>
+                    <text>{{item.num}}</text>
+                </view>
+            </view>
+        </view>
+        
+           
+    </view>
+</view>

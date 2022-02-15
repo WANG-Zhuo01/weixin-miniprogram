@@ -1,0 +1,25 @@
+<!--pages/test/test.wxml-->
+<view class="mainContainer">
+    <view class="rollingImage">
+        <swiper autoplay interval='3000' indicator-dots >
+            <swiper-item>
+                <image class="rollImage" src="{{rollingImage1}}"></image>
+                <!-- ../../images/首页/u142.png -->
+            </swiper-item>
+            <swiper-item>
+                <image class="rollImage" src="{{rollingImage2}}"></image>
+                <!-- ../../images/首页/u143.png -->
+            </swiper-item> 
+            <swiper-item>
+                <image class="rollImage" src="{{rollingImage3}}"></image>
+                <!-- ../../images/首页/u144.jpg -->
+            </swiper-item> 
+        </swiper>
+    </view>
+    <view class="recommendContainer">
+        <view class="recommend"></view>
+        <view class="recommend"></view>
+        <view class="recommend"></view>
+        <view class="recommend"></view>
+    </view>
+</view>

@@ -1,0 +1,49 @@
+/* pages/skinResults/skinResults.wxss */
+.shareBtn{
+    /* width:40px; */
+    border-radius: 15px;
+    border: 2rpx solid rgb(255, 100, 118);
+    color:rgb(255, 100, 118);
+}
+.resultList{
+    width:100%;
+    height:440rpx;
+    margin-top: 10px;
+    /* background-color: #ddd; */
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.title{
+    width:100%;
+    height:15%;
+}
+.progressResult{
+    width:100%;
+    height:85%;
+    color:rgb(109, 109, 109);
+}
+.progressResult progress{
+    margin-bottom: 15rpx;
+}
+.proposal{
+    width:100%;
+    height:400rpx;
+    margin-top: 10px;
+
+    font-weight: bolder;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+}
+.recommend{
+    margin: 10rpx;
+    width:98%;
+    font-weight: normal;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(238, 220, 220);
+    color: rgb(100, 102, 104);
+}

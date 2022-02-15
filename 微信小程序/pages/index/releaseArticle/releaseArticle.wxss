@@ -1,0 +1,24 @@
+/* pages/index/releaseArticle/releaseArticle.wxss */
+.articleContainer{
+    margin: 15px;
+}
+
+.weui-input{
+    width: 100%;
+    /* border:1px solid pink; */
+    height: 200rpx;
+    /* border-bottom: none;
+    border-left: none;
+    border-right: none; */
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+}
+.page-section-title{
+    border:1px solid pink;
+    height:100rpx;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    color: #ddd;
+}

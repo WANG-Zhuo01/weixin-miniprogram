@@ -1,0 +1,93 @@
+<!--pages/skinResults/skinResults.wxml-->
+<!-- <text>pages/skinResults/skinResults.wxml</text> -->
+<!-- <image src="{{photo}}"></image> -->
+<!-- <view class="container">
+    <view style="width: 90%; height: 100%;">
+        <view style="display: flex; flex-direction: row;  align-items: center; justify-content: space-between;">
+            <view style="display: flex;align-items: center;">
+                <view style='width:50px;height:50px;align-items: center;display: flex; justify-content: center; border-radius: 50%; overflow: hidden;'> 
+                    <open-data   type='userAvatarUrl' style='width:100%; height: 100%;' ></open-data>
+                </view>
+               
+                <open-data  type="userNickName" style="color:rgb(255, 100, 118); font-weight: bolder;"></open-data>
+
+            </view>
+            <view style="display: flex;align-items: center;">
+                <button class='shareBtn' openType='share' size="mini" hover-class="none">分享</button>
+            </view>
+        </view>
+        <view class='resultList'>
+            <view class='title'>
+                <text>历史评分</text>
+                <text style="font-size: 13px; color: rgb(255, 135, 149);">(第{{count}}次检测)</text>
+            </view>
+                <button wx:for="{{skinData}}" wx:for-index="i" style=' color:rgb(247, 137, 150); border-radius: 20px; border:0px solid ;font-size:16px;box-shadow:2px 2px 5px rgb(255, 135, 149);padding: 3px;margin: 5px; width: 5rem;height:2rem' >第{{i+1}}次:{{item.score}}</button>
+        </view>
+        <view class='resultList'>
+            <view class='title'>
+                <text>综合评分</text>
+            </view>
+             <view class='progressResult'>
+                健康度:{{skinData[skinData.length-1].healthLevel}}<progress percent='{{skinData[skinData.length-1].healthLevel}}' border-radius='5' stroke-width='10' active duration="15" color="rgb(255, 89, 24)"></progress>
+                干油性:{{skinData[skinData.length-1].dryLevel}}<progress percent='{{skinData[skinData.length-1].dryLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(255, 153, 0)"></progress>
+                年轻度:{{skinData[skinData.length-1].youngLevel}}<progress percent='{{skinData[skinData.length-1].youngLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(255, 255, 0)"></progress>
+                耐受性:{{skinData[skinData.length-1].confirmLevwl}}<progress percent='{{skinData[skinData.length-1].confirmLevwl}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(26, 188, 156)"></progress>
+                细腻度:{{skinData[skinData.length-1].smoothLevel}}<progress percent='{{skinData[skinData.length-1].smoothLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(51, 153, 255)"></progress>
+            </view>
+        </view>
+        <view></view>
+        <view class='proposal'>
+            <view class='title'><text>美白方案</text></view>
+                <view class="recommend" wx:for="{{skinData[skinData.length-1].proposal}}">{{item}}
+                </view>
+        </view>    
+    </view>
+</view> -->
+
+<!-- <web-view src="https://www.faceplusplus.com.cn/skinstatus-evaluation/"></web-view> -->
+
+<view class="container">
+    <view style="width: 90%; height: 100%;">
+        <view style="display: flex; flex-direction: row;  align-items: center; justify-content: space-between;">
+            <view style="display: flex;align-items: center;">
+                <view style='width:50px;height:50px;align-items: center;display: flex; justify-content: center; border-radius: 50%; overflow: hidden;'> 
+                    <open-data   type='userAvatarUrl' style='width:100%; height: 100%;' ></open-data>
+                </view>
+                <open-data  type="userNickName" style="color:rgb(255, 100, 118); font-weight: bolder;"></open-data><!-- 用户昵称 -->
+                
+            </view>
+            <view style="display: flex;align-items: center;">
+                <button class='shareBtn' openType='share' size="mini" hover-class="none">分享</button>
+            </view>
+        </view>
+        <view class='resultList'>
+            <view class='title'>
+                <text>历史评分</text>
+                <text style="font-size: 13px; color: rgb(255, 135, 149);">(第{{count}}次检测)</text>
+            </view>
+            <!-- <canvas canvas-id="skinScore"  "> -->
+            <!-- <view style="width:100%; height:300rpx; overflow:scroll; "> -->
+                <button wx:for="{{skinGlobalData}}" wx:for-index="i" style=' color:rgb(247, 137, 150); border-radius: 20px; border:0px solid ;font-size:16px;box-shadow:2px 2px 5px rgb(255, 135, 149);padding: 3px;margin: 5px; width: auto;height:2rem' >第{{i+1}}次:{{item.score}}</button>
+            <!--</canvas>background-color: rgb(255, 135, 149);-->
+            <!-- </view> -->
+        </view>
+        <view class='resultList'>
+            <view class='title'>
+                <text>综合评分</text>
+            </view>
+             <view class='progressResult'>
+                健康度:{{skinData.healthLevel}}<progress percent='{{skinData.healthLevel}}' border-radius='5' stroke-width='10' active duration="15" color="rgb(255, 89, 24)"></progress>
+                干油性:{{skinData.dryLevel}}<progress percent='{{skinData.dryLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(255, 153, 0)"></progress>
+                年轻度:{{skinData.youngLevel}}<progress percent='{{skinData.youngLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(255, 255, 0)"></progress>
+                耐受性:{{skinData.confirmLevwl}}<progress percent='{{skinData.confirmLevwl}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(26, 188, 156)"></progress>
+                细腻度:{{skinData.smoothLevel}}<progress percent='{{skinData.smoothLevel}}' border-radius="5" stroke-width="10" active duration="15" color="rgb(51, 153, 255)"></progress>
+            </view>
+        </view>
+        <view></view>
+        <view class='proposal'>
+            <view class='title'><text>美白方案</text></view>
+                <view class="recommend" wx:for="{{skinData.proposal}}">{{item}}
+                </view>
+        </view>    
+    </view>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/index/personalPanel/personalPanel.wxml-->
+<view class='personalPanel'>
+    <button>
+        <view style="width: 100%; height:100%; align-items: center;">
+            <view style="height: 50px; width: 50px; border-radius: 50%; overflow: hidden;">
+                <open-data type='userAvatarUrl'></open-data>
+            </view>
+            <!-- <view style="height: 50px; width: 120px; overflow: hidden;"> -->
+                <open-data type='userNickName' style="font-size: smaller;"></open-data>  
+            <!-- </view> -->
+        </view> 
+    </button>
+    <view>
+        <button>{{23}}<text style="color:#ddd">\n关注</text></button>
+        <button>{{1332}}<text style="color:#ddd">\n粉丝</text></button>
+    </view>
+    <view>
+        <button>{{123}}<text style="color:#ddd">\n收藏</text></button>
+        <button>{{12}}<text style="color:#ddd">\n购物</text></button>
+    </view>
+    <!-- <view style="background-color: white;">
+        <switch checked="{{switch1Checked}}" bindchange="switch1Change"/>
+        <text>{{'推送开关'}}</text>
+    </view> -->
+    <button bindtap='setting'>{{'设置'}}</button>
+    <button bindtap="navToLogs">{{'登录日志'}}</button>
+    <button>{{'关于我们'}}</button>
+    <button>{{'账号安全'}}</button>
+    <button>{{'意见反馈'}}</button>
+    <button bindtap="exit">{{'退出登录'}}</button>
+</view>

@@ -1,0 +1,45 @@
+/* pages/test/test.wxss */
+.mainContainer{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(33, 115, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rollingImage{
+    width:90%;
+}
+.rollImage{
+    width: 100%;
+}
+.recommendContainer{
+    width:90%;
+    height:600px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;/* 
+    justify-content: space-around; */
+    /* align-items: center; */
+    align-items: center;
+    /* justify-content: space-around; */
+}
+/* .shopContainer{
+    background-color: #00dd00;
+    width: 90%;
+    height:100%;
+    display:flex;
+   flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+ */
+
+.recommend{
+    width: 95%;
+    height:115px;
+    background-color: yellow;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(29, 27, 27, 0.555);
+    margin-top: 10px;
+}
